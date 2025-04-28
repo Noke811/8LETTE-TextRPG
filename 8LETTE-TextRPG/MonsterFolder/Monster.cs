@@ -85,9 +85,9 @@ namespace _8LETTE_TextRPG.MonsterFolder
             {
                 if (_states.TryGetValue(_prevState, out StateElem? stateElem))
                 {
-                    if (stateElem != null && stateElem.Exited != null)
+                    if (stateElem != null)
                     {
-                        stateElem.Exited();
+                        stateElem.Exited?.Invoke();
                     }
                 }
             }
