@@ -259,7 +259,7 @@ namespace _8LETTE_TextRPG
             Stats.BaseEvasionRate = job.EvasionRate;
 
             // 디렉터에서 스킬 계수 강화
-            float enforce = (job.PromotionType == PromotionType.Senior) ? 1.5f : 1f;
+            float enforce = (job.PromotionType == PromotionType.Director) ? 1.5f : 1f;
             foreach (Skill skill in job.Skills)
             {
                 skill.PromotionMultiplier = enforce;
